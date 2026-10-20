@@ -245,7 +245,7 @@ footer{border-top:1px solid #ffffff0d;text-align:center;padding:30px;color:#6973
 .rules-intro{max-width:760px;margin:0 auto 34px;text-align:center;color:#929aaa;line-height:1.9}
 .rules-tabs{display:flex;gap:8px;width:min(560px,100%);margin:0 auto 34px;padding:8px;border:1px solid #ffffff14;border-radius:16px;background:#080b11}
 .rules-tab{flex:1;border:0;border-radius:12px;background:transparent;color:#929aaa;padding:15px 12px;font:inherit;font-weight:800;cursor:pointer;transition:background .25s,color .25s,box-shadow .25s}
-.rules-tab.active{background:#171a20;color:#fff;box-shadow:inset 
+.rules-tab.active{background:#171a20;color:#fff;box-shadow:inset 0 0 0 1px #00d8ff55,0 4px 18px #00d8ff12}
 .rules-tab:hover{color:#00d8ff}
 .rules-panel{animation:rulesIn .35s ease both}
 .rules-panel[hidden]{display:none}
@@ -349,29 +349,31 @@ footer{border-top:1px solid #ffffff0d;text-align:center;padding:30px;color:#6973
     <p class="rules-intro">سرور پیراشکی ام سی نیز قوانین و مقررات خود رو داره و اگر این قوانین و مود هارو داشته باشید باعث بن شدن شما میشود.</p>
     <div class="rules-tabs" role="tablist" aria-label="قوانین و مودها">
       <button class="rules-tab active" type="button" role="tab" aria-selected="true" aria-controls="rules-list" data-panel="rules-list">☷ قوانین</button>
-      <button class="rules-tab" type="button" role="tab" aria-selected="false" aria-controls="mods-list" data-panel="mods-list">⊘ مودهای غیرمجاز</button>
+      <button class="rules-tab" type="button" role="tab" aria-selected="false" aria-controls="mods-list" data-panel="mods-list">⊘ مود های ممنوع</button>
     </div>
     <div id="rules-list" class="rules-panel" role="tabpanel">
       <div class="rules-grid">
-        <div class="rule-card"><span class="rule-number">1</span><div><h3>عنوان قانون اول</h3><p>متن قانون اول را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">2</span><div><h3>عنوان قانون دوم</h3><p>متن قانون دوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">3</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">4</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">5</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>        
-        <div class="rule-card"><span class="rule-number">6</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">7</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">8</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">9</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">10</span><div><h3>عنوان قانون سوم</h3><p>متن قانون سوم را اینجا بنویس.</p></div></div>
-
-        
+                <div class="rule-card"><span class="rule-number">1</span><div><h3>چیت و کلاینت غیر مجاز</h3><p>استفاده از کلایت چیت و خود چیت غیر مجاز است.</p></div></div>
+        <div class="rule-card"><span class="rule-number">2</span><div><h3>اسپم</h3><p>اسپم کردن و تکرار کردن کلمات ممنوع است.</p></div></div>
+        <div class="rule-card"><span class="rule-number">3</span><div><h3>احترام</h3><p>احترام به پلیرا مخصوصا استفا ها ممنوع است.</p></div></div>
+        <div class="rule-card"><span class="rule-number">4</span><div><h3>تبلیغ کردن</h3><p>تبلیغ کردن سرور های دیگر ممنوع است.</p></div></div>
+        <div class="rule-card"><span class="rule-number">5</span><div><h3>لو دادن هویت های استف ها</h3><p>لو دادن هویت های استف یا پلیر ها ممنوع است.</p></div></div>     
+        <div class="rule-card"><span class="rule-number">6</span><div><h3>xray</h3><p>استفاده از xray یا هر چیزی که شبیه xray است ممنوع است.</p></div></div>     
       </div>
     </div>
     <div id="mods-list" class="rules-panel" role="tabpanel" hidden>
-      <div class="rules-grid">
-        <div class="rule-card"><span class="rule-number">1</span><div><h3>نام مود اول</h3><p>توضیحات مود غیرمجاز را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">2</span><div><h3>نام مود دوم</h3><p>توضیحات مود غیرمجاز را اینجا بنویس.</p></div></div>
-        <div class="rule-card"><span class="rule-number">3</span><div><h3>نام مود سوم</h3><p>توضیحات مود غیرمجاز را اینجا بنویس.</p></div></div>
+        <div class="rule-card"><span class="rule-number">1</span><div><h3>Meteor clint</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">2</span><div><h3>Wurst clint</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">3</span><div><h3>Vape clint</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">4</span><div><h3>Aristois clint</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">5</span><div><h3>LiquidBounce</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">6</span><div><h3>Ares clint</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">7</span><div><h3>Sigma clint</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">8</span><div><h3>نام مود سوم</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">9</span><div><h3>نام مود سوم</h3><p></p></div></div>
+        <div class="rule-card"><span class="rule-number">10</span><div><h3>نام مود سوم</h3><p></p></div></div>
+
+
       </div>
     </div>
   </section>
@@ -527,19 +529,31 @@ document.querySelectorAll('.staff-card').forEach(card => {
 </script>
 
 <script>
-// Switch between server rules and prohibited mods panels.
-document.querySelectorAll('.rules-tab').forEach(tab => {
-  tab.addEventListener('click', () => {
-    document.querySelectorAll('.rules-tab').forEach(btn => {
-      const active = btn === tab;
-      btn.classList.toggle('active', active);
-      btn.setAttribute('aria-selected', active ? 'true' : 'false');
+// Reliable switching between the rules and prohibited-mods tabs.
+(() => {
+  const tabs = Array.from(document.querySelectorAll('.rules-tab'));
+  const panels = Array.from(document.querySelectorAll('.rules-panel'));
+  if (!tabs.length || !panels.length) return;
+
+  function showPanel(panelId) {
+    tabs.forEach((tab) => {
+      const active = tab.dataset.panel === panelId;
+      tab.classList.toggle('active', active);
+      tab.setAttribute('aria-selected', active ? 'true' : 'false');
     });
-    document.querySelectorAll('.rules-panel').forEach(panel => {
-      panel.hidden = panel.id !== tab.dataset.panel;
+    panels.forEach((panel) => {
+      panel.hidden = panel.id !== panelId;
+    });
+  }
+
+  tabs.forEach((tab) => {
+    tab.addEventListener('click', (event) => {
+      event.preventDefault();
+      showPanel(tab.dataset.panel);
     });
   });
-});
+  showPanel(tabs.find((tab) => tab.classList.contains('active'))?.dataset.panel || 'rules-list');
+})();
 </script>
 
 </body>
